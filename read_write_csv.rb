@@ -1,11 +1,11 @@
 require 'csv'
 
 file_location = "sample.csv"
-content = File.read file_location
+sample_content = File.read file_location
 
-data = CSV.parse(content, headers: true) #CSV.read can also be used so you don't need the file handler variable
+sample_data = CSV.parse(sample_content, headers: true) #CSV.read can also be used so you don't need the file handler variable
 
-data.each do |d|
+sample_data.each do |d|
     # Note: As we've parsed with headers, we can reference the columns by name as each row is a hash
     puts "Date: #{d["date"]}, Price: #{d["price"]}"
 end

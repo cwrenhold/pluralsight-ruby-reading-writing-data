@@ -9,9 +9,9 @@ file_location = "sample.txt"
 # content = file.read
 
 # Concise method, read directly from the file to a variable
-content = File.read file_location
+sample_content = File.read file_location
 
-puts content
+puts sample_content
 
 new_content = "Ruby is awesome! "
 
